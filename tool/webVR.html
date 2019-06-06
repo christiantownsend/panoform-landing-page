@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>PanoForm</title>
+		<meta name="viewport" content="initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<main id="content">
+			<p class="hideThis">Upload your panorama, or choose from the gallery below:</p>
+
+			<div id="panoramaContainer"></div>
+
+			<form style="text-align: center;" class="hideThis" method="get" action="index.html">
+				<input type="file" accept="image/*" name="pano" id="pano" />
+			</form>
+
+			<div class="hideThis" id="gallery">
+				<!-- populate from javascript -->
+			</div>
+		</main>
+
+		<script src="./js/three.min.js"></script>
+		<script src="./js/photo-sphere-viewer.js"></script>
+		
+		<!-- Panda's script -->
+		<script src="./js/interaction.js"></script>
+		<script src="./js/loadWebVR.js"></script>
+	</body>
+
+</html>

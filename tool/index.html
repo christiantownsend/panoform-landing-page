@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+		<title>PanoForm | Tool</title>
+		<meta name="viewport" content="initial-scale=1.0" />
+		
+		<!-- favicon -->		
+		<link rel="icon" type="image/png" href="../favicon.png">
+		
+		<meta name="apple-mobile-web-app-title" content="PanoForm | Tool">
+		<meta name="application-name" content="PanoForm | Tool">
+		<meta name="theme-color" content="#ee3933">
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Nunito:900" rel="stylesheet">
+		
+		<link href="../css/template.css" rel="stylesheet">
+
+		<!-- Panda's scripts -->
+		<script src="./js/autoPopulate.js"></script>
+	</head>
+
+	<body>
+		<div id="page_wrapper" class = "hideThis">
+			
+			<!-- Header start -->
+			<header class="dm__headerNavbar dm__stickyHeader header--not-sticked"> <!-- You can remove the dm__stickyHeader class if you want to disable the sticky header -->
+				<div class="dm__headerNavbar--wrapper">
+					<div class="dm__headerContainer">
+						<div class="pull-left dm__logoContainer">
+							<h1>
+								<a class="dm__logoAnch" href="../">
+									<img src="../images/assets/logo.png" class="dm__header--logoImg logo team" alt="">
+								</a>
+							</h1>
+						</div>
+						
+						<!-- Simple menu - if you want to use this menu please uncomment the lines below and hide "zn-res-menuwrapper" above div  -->
+
+						<div class="collapse navbar-collapse pull-right dm-mainNav-wrapper" id="mainMenu_nav">
+							<ul class="nav navbar-nav dm__mainNav">
+								<li><a href="../tool/" class="btn btn-primary btn-lg try">Try it!</a></li>
+								<!--
+								<li><a href="#dm__featuresSection">Features</a></li>
+								<li><a href="#dm__newsletterSection">Newsletter</a></li>
+								-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header end -->
+			<br><br>
+			<p class="hideThis col-sm-6 col-sm-offset-3">Upload your project, or choose from the gallery below.<br></p>
+
+			<form style="text-align: center; margin-bottom:48px;" class="hideThis col-sm-6 col-sm-offset-3" method="get" action="index.html">
+				<input type="file" accept="image/*" name="pano" id="pano" />
+			</form>
+			<!--
+			<p class = "hideThis">File upload guidelines:</p>
+			<ul class = "hideThis uploadGuidelines">
+				<li>Name your file "(Your Name)_(Prototype Title)"</li>
+				<li>While the file does not have to be a JPEG to be viewed, it must be a JPEG if you want to add it to the gallery below.</li>
+			</ul>
+			-->
+
+
+			<div class="hideThis row" id="gallery">
+				<!-- populate from javascript -->
+				 <!--<div class="thumb col-sm-4">
+					<div style="background-image: url('./img/thumbs/Payod Panda_Title.jpg'); background-size:cover; width:100%; height:100%;">
+						Title <br>by Payod Panda
+					</div>
+					<div class = "attrib">
+					</div>
+				</div>		
+				--> 		
+			</div>
+			
+			<!--/.Footer start -->
+			<footer class="dm-footer hideThis">
+				
+				<div class="footer-second-section">
+					<div class="container">
+						<div class="row">
+							<div id="copyright" class="col-md-8 col-xs-12 dn__footer-text"></div> 
+							<div class="col-sm-1 col-xs-12 dn__footer-text">
+								<a href="https://design.ncsu.edu/student-life/resources/ix-lab/">About</a>
+							</div>
+							<div class="col-sm-1 col-xs-12 dn__footer-text">
+								<a href="./team/">Team</a>
+							</div>
+							<div class="col-sm-1 col-xs-12 dn__footer-text">
+								<a href="mailto:daham@ncsu.edu">Email</a>
+							</div>
+							<div class="col-sm-1 col-xs-12 dn__footer-text">
+								<a href="https://twitter.com/panoform">Twitter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</footer>
+			<!--/.Footer end -->
+		</div>	
+		<div id="panoramaContainer"></div>
+
+		<script src="./js/three.min.js"></script>
+		<script src="./js/photo-sphere-viewer.js"></script>
+		
+		<!-- Panda's scripts -->
+		<script src="./js/autoPopulate.js"></script>
+		<script src="./js/interaction.js"></script>
+		<script src="./js/loadPhotosphereViewer.js"></script>
+	</body>
+
+</html>
