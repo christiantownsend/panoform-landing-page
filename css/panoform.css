@@ -245,12 +245,12 @@ section.gray {
 
 .header_logo {
     height: 1.5rem;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 0 0;
     margin-bottom: 0;
 }
 
 .header_nav {
-    margin: 1.5rem 1.5rem 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 .header_nav > .nav_item {
@@ -258,6 +258,10 @@ section.gray {
     margin: 0 0 0 1.5rem;
     color: inherit;
     white-space: nowrap;
+}
+
+.header_nav > .nav_item:first-child {
+    margin-left: 0;
 }
 
 .header_nav > .nav_item-emphasis {
