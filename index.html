@@ -2,14 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="css/panoform.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon.png">
     <title>Panoform</title>
+    <meta name="Description" content="Panoform is an application that makes virtual reality content creation easy for everyone.">
+    <link rel="stylesheet" href="css/panoform.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container header_container">
+            <a href="/">
+                <img class="header_logo" src="./img/logo-full.svg" alt="">
+            </a>
+            <nav class="header_nav">
+                <a class="nav_item" href="/#about">About</a>
+                <a class="nav_item" href="/#grids">Grids</a>
+                <a class="nav_item" href="/team">Team</a>
+                <a class="nav_item nav_item-emphasis" href="https://tool.panoform.com/">Try it!</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 class="hero_title">Panoform 2.0 has been released!</h1>
+        <a href="#whats-new" class="button outline">What's new?</a>
+    </section>
+
+    <main>
+        <section id="about" class="gray">
+            <div class="container">
+                <h2 class="section_header">Panoform is a tool which allows anyone to become a VR creator. All you need to get started is some paper, crayons, and a mobile device.</h2>
+                <div class="grid">
+                    <div class="grid-item island">
+                        <img class="island_image" src="img/square.svg" alt="">
+                        <h3 class="text-center">Tangible</h3>
+                        <p>Wrap your sketches and doodles into a 360° environment!</p>
+                    </div>
+                    <div class="grid-item island">
+                        <img class="island_image" src="img/circle.svg" alt="">
+                        <h3 class="text-center">Low Tech</h3>
+                        <p>Panoform is browser based and compatible with most mobile phones.</p>
+                    </div>
+                    <div class="grid-item island">
+                        <img class="island_image" src="img/half.svg" alt="">
+                        <h3 class="text-center">Inexpensive</h3>
+                        <p>Google Cardboard has made VR accesible. You can even make your own!</p>
+                    </div>
+                    <div class="grid-item island">
+                        <img class="island_image" src="img/quarter.svg" alt="">
+                        <h3 class="text-center">Expandable</h3>
+                        <p>What will you make with Panoform? The possibilities are endless!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-we-play" class="">
+            <div class="container">
+                <h2 class="section_header">How we play</h2>
+                <div class="grid three">
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_01.jpg" alt="">
+                        <div class="back">
+                            Teaching students to be creative is easily done through play.
+                        </div>
+                    </div>
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_02.jpg" alt="">
+                        <div class="back">
+                            Designing with a system-based approach is at the core of “computational thinking.”
+                        </div>
+                    </div>
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_03.jpg" alt="">
+                        <div class="back">
+                            Students learn by making prototypes and then going through the process of refinement.
+                        </div>
+                    </div>
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_04.jpg" alt="">
+                        <div class="back">
+                            The process involves some visual reasoning and spatial translation.
+                        </div>
+                    </div>
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_05.jpg" alt="">
+                        <div class="back">
+                            The hand drawn approach to creating VR opens up a world of possibilities.
+                        </div>
+                    </div>
+                    <div class="grid_item flipper">
+                        <img class="front" src="images/photos/work_thumb_06.jpg" alt="">
+                        <div class="back">
+                            Educators should prompt students to experiment and consider wild ideas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="whats-new" class="gray">
+            <div class="container">
+                <h2 class="section_header">What's new?</h2>
+                <ul>
+                    <li>The tool has been redesigned to make it easier to use on both desktop or mobile.</li>
+                    <li>User content is no longer stored on Panoform servers, but on your local device. This means you no longer have to worry about anyone else seeing your VR creations unless you want to share!</li>
+                    <li>You are now able to remove images you have previously uploaded, or clear your recent images list entirely.</li>
+                    <li>The tool has been entirely re-coded with performance in mind. The site should now load much more quickly on most devices.</li>
+                    <li>Panoform is now a progressive web app, and may work even if you're device is not online! (depending on whether your device supports this)</li>
+                    <li>Unfortunately, changes to the default settings in iOS have introduced another step in the setup process. Please refer to the updated instructions in <a href="#how-it-works">How it works</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2 class="section_header">How it works</h2>
+                <div class="grid">
+                    <div class="grid_item">
+                        <img src="images/assets/1.png" alt="">
+                        <ul>
+                            <li>Download a grid from our grids section below</li>
+                            <li>Print out the grid onto a letter-sized sheet</li>
+                        </ul>
+                    </div>
+                    <div class="grid_item">
+                        <img src="images/assets/2.png" alt="">
+                        <ul>
+                            <li>Take a picture of your composition and crop to the corners of the grid</li>
+                            <li>If your device runs iOS, ensure <strong>Settings > Safari > Motion & Orientation Access</strong> is enabled</li>
+                        </ul>
+                    </div>
+                    <div class="grid_item">
+                        <img src="images/assets/3.png" alt="">
+                        <ul>
+                            <li>Go to <a href="https://tool.panoform.com/">the Panoform Tool</a></li>
+                            <li>Upload your composition from your phone library</li>
+                        </ul>
+                    </div>
+                    <div class="grid_item">
+                        <img src="images/assets/4.png" alt="">
+                        <ul>
+                            <li>Tap the VR icon after the image loads</li>
+                            <li>Insert device into a Cardboard headset for the VR experience!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grids" class="gray">
+            <div class="container">
+                <h2 class="section_header">Grids</h2>
+                <p>You can use a variety of grids with Panoform, and each can help you in different ways. If you click the download button on a grid below, it will download a light version of the grid for you to print and draw on top of.</p>
+                <div class="grid three">
+                    <div class="grid_item island">
+                        <img class="island_image landscape" src="images/grids/grid_Main_thumb.jpg" alt=""></img>
+                        <h3 class="text-center">Basic Grid</h3>
+                        <p>This will appear as if you're inside a small room, and all drawings will appear on the walls, floor, and ceiling.</p>
+                        <a download="panoform_grid_basic.jpg" href="images/grids/grid_Main.jpg" class="button text-center">Download</a>
+                    </div>
+                    <div class="grid_item island">
+                        <img class="island_image landscape" src="images/grids/grid_Infinite_thumb.jpg" alt=""></img>
+                        <h3 class="text-center">Infinite Grid</h3>
+                        <p>This will look as if it goes on forever in every direction. This is useful for less structured scenes.</p>
+                        <a download="panoform_grid_basic.jpg" href="images/grids/grid_Infinite.jpg" class="button text-center">Download</a>
+                    </div>
+                    <div class="grid_item island">
+                        <img class="island_image landscape" src="images/grids/grid_noSky_thumb.jpg" alt=""></img>
+                        <h3 class="text-center">Horizon Grid</h3>
+                        <p>This will look as if it goes on forever around you, but with no sky. This is useful for landscape scenes.</p>
+                        <a download="panoform_grid_basic.jpg" href="images/grids/grid_noSky.jpg" class="button text-center">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
+    <footer>
+        <div class="container footer_container">
+            © Panoform, 2019. All rights reserved.
+            <nav class="footer_nav">
+                <a class="nav_item" href="https://twitter.com/panoform">Twitter</a>
+                <a class="nav_item" href="mailto:mxrealitylab@ncsu.edu?subject=Panoform">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 </html>
